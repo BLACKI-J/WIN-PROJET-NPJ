@@ -1,5 +1,4 @@
 Installer le rôle AD DS et les outils de gestion
-
 powershell
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 
@@ -11,9 +10,7 @@ Import-Module ADDSDeployment
 
 
 Promouvoir le serveur en contrôleur de domaine
-
 Pour créer une nouvelle forêt
-
 powershell
 Install-ADDSForest `
     -DomainName "example.com" `
@@ -24,9 +21,7 @@ Install-ADDSForest `
 
 
 Pour ajouter un contrôleur de domaine à un domaine existant
-
 powershell
-
 Copier le code
 Install-ADDSDomainController `
     -DomainName "example.com" `
@@ -51,35 +46,3 @@ Install-ADDSDomainController : Ajoute un contrôleur de domaine à un domaine ex
 -SafeModeAdministratorPassword : Définit le mot de passe pour l'administrateur en mode sans échec.
 -InstallDNS : Installe le rôle DNS.
 -Force : Force l'exécution sans demande de confirmation.
-Exemple complet pour une nouvelle forêt
-powershell
-Copier le code
-# Installer le rôle AD DS et les outils de gestion
-Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
-
-# Importer le module ADDSDeployment
-Import-Module ADDSDeployment
-
-# Promouvoir le serveur en tant que premier contrôleur de domaine dans une nouvelle forêt
-Install-ADDSForest `
-    -DomainName "example.com" `
-    -DomainNetbiosName "EXAMPLE" `
-    -SafeModeAdministratorPassword (ConvertTo-SecureString "VotreMotDePasse" -AsPlainText -Force) `
-    -InstallDNS `
-    -Force
-Exemple complet pour ajouter un contrôleur de domaine à un domaine existant
-powershell
-Copier le code
-# Installer le rôle AD DS et les outils de gestion
-Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
-
-# Importer le module ADDSDeployment
-Import-Module ADDSDeployment
-
-# Promouvoir le serveur en tant que contrôleur de domaine dans un domaine existant
-Install-ADDSDomainController `
-    -DomainName "example.com" `
-    -Credential (Get-Credential) `
-    -SafeModeAdministratorPassword (ConvertTo-SecureString "VotreMotDePasse" -AsPlainText -Force) `
-    -InstallDNS `
-    -Force
