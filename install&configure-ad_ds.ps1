@@ -5,7 +5,6 @@ Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 
 
 Importer le module AD DS Deployment
-
 powershell
 Copier le code
 Import-Module ADDSDeployment
