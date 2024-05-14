@@ -1,0 +1,16 @@
+
+Étapes pour Installer et Configurer AD DS via PowerShell
+
+Étape 1: Installer le rôle AD DS
+            1. Ouvrir PowerShell en tant qu'administrateur.
+            1. Exécuter la commande pour installer le rôle AD DS.
+
+Étape 2: Importer le module AD DS Deployment
+            1. Importer le module AD DS Deployment pour utiliser les commandes de promotion du contrôleur de domaine.
+
+Étape 3: Promouvoir le serveur en contrôleur de domaine
+        Pour créer une nouvelle forêt :
+            1. Exécuter la commande Install-ADDSForest avec les paramètres appropriés.
+
+Pour ajouter un contrôleur de domaine à un domaine existant :
+            1. Exécuter la commande Install-ADDSDomainController avec les paramètres appropriés.
