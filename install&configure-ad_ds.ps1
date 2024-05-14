@@ -2,8 +2,9 @@ Installer le rôle AD DS et les outils de gestion
 
 powershell
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
-Importer le module AD DS Deployment
 
+
+Importer le module AD DS Deployment
 
 powershell
 Copier le code
