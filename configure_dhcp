@@ -1,0 +1,18 @@
+
+Pour configurer le service DHCP sur un serveur Windows via PowerShell, suivez les étapes ci-dessous. 
+Ces étapes couvrent l'installation du rôle DHCP, la configuration d'une nouvelle étendue, et la configuration des options de l'étendue.
+
+Étapes pour Configurer DHCP via PowerShell
+
+Étape 1: Installer le rôle DHCP
+Ouvrir PowerShell en tant qu'administrateur.
+Exécuter la commande pour installer le rôle DHCP.
+
+Étape 2: Autoriser le serveur DHCP dans Active Directory
+Exécuter la commande pour autoriser le serveur DHCP.
+
+Étape 3: Ajouter une nouvelle étendue DHCP
+Exécuter la commande pour ajouter une nouvelle étendue avec les paramètres appropriés (nom, plage d'adresses, masque de sous-réseau).
+  
+Étape 4: Configurer les options de l'étendue
+Configurer des options comme la passerelle par défaut et les serveurs DNS.
