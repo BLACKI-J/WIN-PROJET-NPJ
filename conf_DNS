@@ -1,0 +1,11 @@
+Étapes pour Configurer DNS via PowerShell
+
+Étape 1: Installer le rôle DNS
+Ouvrir PowerShell en tant qu'administrateur.
+Exécuter la commande pour installer le rôle DNS.
+  
+Étape 2: Créer une zone DNS
+Exécuter la commande pour créer une zone DNS principale.
+  
+Étape 3: Ajouter des enregistrements DNS
+Exécuter les commandes pour ajouter différents types d'enregistrements DNS (A, CNAME, MX, etc.).
