@@ -1,0 +1,14 @@
+Étapes pour Configurer le Basculement DHCP via PowerShell
+Étape 1: Installer le rôle DHCP
+
+Ouvrir PowerShell en tant qu'administrateur sur les deux serveurs DHCP.
+Exécuter la commande pour installer le rôle DHCP sur chaque serveur.
+
+Étape 2: Autoriser les serveurs DHCP dans Active Directory
+Exécuter la commande pour autoriser les serveurs DHCP dans AD DS.
+
+Étape 3: Configurer une nouvelle étendue DHCP sur le serveur principal
+Exécuter la commande pour ajouter une nouvelle étendue DHCP.
+
+Étape 4: Configurer le basculement DHCP entre les serveurs
+Exécuter la commande pour configurer le basculement entre les deux serveurs.
